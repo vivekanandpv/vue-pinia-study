@@ -14,4 +14,10 @@ export const appStore = defineStore("my-counter", {
       this.counter--;
     },
   },
+  getters: {
+    // doubleTheCounter(state) {
+    //   return state.counter * 2;
+    // },
+    doubleTheCounter: (state) => state.counter * 2,
+  },
 });
