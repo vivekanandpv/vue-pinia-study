@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import Left from './components/Left.vue';
-import Right from './components/Right.vue'
+import Right from './components/Right.vue';
+import { appStore } from './store/app.store';
+
+const store = appStore();
 </script>
 
 <template>
   <div class="p-5">
     <h2>App Component</h2>
+    <p>Counter: {{ store.counter }}</p>
 
     <hr>
 
