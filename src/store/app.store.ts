@@ -6,4 +6,12 @@ export const appStore = defineStore("my-counter", {
       counter: 99,
     };
   },
+  actions: {
+    increment() {
+      this.counter++;
+    },
+    decrement() {
+      this.counter--;
+    },
+  },
 });
